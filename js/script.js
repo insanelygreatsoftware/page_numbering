@@ -1,5 +1,7 @@
 var queryString = new URLSearchParams(window.location.search);;
-var page = queryString ? queryString.get('page') : 1;
+var page = queryString.get('page') ? queryString.get('page') : 1;
+
+console.log(page);
 
 // create pagination based on number of users
 var numberOfPages = Math.ceil(users.length / 10);
